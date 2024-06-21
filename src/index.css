@@ -1,0 +1,62 @@
+/*
+.editor-section
+    -> .editor
+    -> .editor-header -- consist of editor-language  and button
+    -> .editor-language
+    -> .code-editor
+
+.output-section
+    -> iframe
+*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(56, 55, 55);
+}
+.editor-section{
+    width:100%;
+    height: 53vh;
+    display:flex;
+    padding:10px;
+    padding-right: 40px;
+    overflow:hidden;
+}
+.editor{
+    flex-grow: 1;
+    flex-basis: 0;
+    margin:5px;
+    filter: drop-shadow(0 0 3px white);
+}
+.editor-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px 20px;
+    color:white;
+    background-color: black;
+    border-radius:10px 10px 0 0 ;
+}
+.oc-btn{
+    height:30px;
+    width:30px;
+    border-radius: 50%;
+    background-color: skyblue;
+}
+.shrink{
+    flex-grow: 0;
+    filter :drop-shadow( 0 0 0 );
+}
+.output-section{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 96%;
+    height: 46vh;
+    background-color: white;
+    margin-left: 15px;
+    margin-top:2px;
+}

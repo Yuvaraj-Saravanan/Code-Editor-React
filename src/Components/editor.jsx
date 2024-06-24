@@ -26,7 +26,7 @@ export default function Editor(props){
         <div className={`editor ${expand ? '' : 'shrink'}`} id={id}>
             <div className="editor-header">
                 <p>{langTitle}</p>
-                <button onClick={handleClick} className="oc-btn">{expand ? "◀" : "▶"}</button>
+                <button onClick={handleClick} className={`oc-btn ${expand ? "" : "rotate"}`}>{expand ? "><" : "<>"}</button>
             </div>
             <ControlEditor 
             className="code-editor"
